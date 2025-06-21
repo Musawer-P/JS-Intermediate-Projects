@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style.css" rel="stylesheet">
+    <title>Ordering App</title>
+</head>
+
+<body>
+    <div class="header">
+        <input type="text" id="search" placeholder="Search">
+        <i class="fas fa-search"></i>
+        <i class="fas fa-cart"></i>
+    </div>
+    <div class="body">
+        <div class="products">
+            <input type="text" id="search-product" placeholder="Search">
+            <div class="product-name">
+                <h2 id="product-name">Chicken Pizza</h2>
+                <img src="images/pizza.jpg">
+                <p id="product-price">10$</p>
+                <p id="product-desc">A delicious fusion of tender, seasoned chicken layered over a bed of rich tomato
+                    sauce and melted mozzarella cheese. Each slice is packed with flavor—featuring juicy grilled or
+                    shredded chicken, hints of garlic, herbs, and spices, all perfectly balanced with a golden, crispy
+                    crust.</p>
+
+                    <div class = "inc-button">
+                       <button type="submit" id="add">
+  <i class="fas fa-add"></i>
+</button>
+<input type = "text" id = "order-qty" value = "1">
+<button type="submit" id="increment">
+  <i class="fas fa-minus"></i>
+</button>
+                    </div>
+            </div>
+        </div>
+
+
+        <div class = "cart">
+            <h2 id = "cart-h2">Cart</h2>
+            <div class = "cart-items">
+                <h1 id = "cart-item">Pizza</h1>
+                <p id = "item-price">10$</p>
+                </div>
+                <div class = "total">
+                    <p id = "total">Total</p>
+                    <p id = "discount"> 10%</p>
+                <p id = "total-item">9$</p>
+
+            </div>
+            <div class = "cart-btn">
+                <button type = "submit" id = "catr-btn">Check out</button>
+            </div>
+        </div>
+
+
+         <div class = "card-details">
+            <h2 id = "checkout-h2">Enter Card Details</h2>
+            <input type = "text" id = "name" placeholder="Enter your Name">
+            <input type = "text" id = "card-number" placeholder="Enter Card Number">
+            <input type = "text" id = "CVV" placeholder="Enter CVV">
+
+            <button type = "submit" id = "card-btn">Pay</button>
+
+        </div>
+
+        <div class = "compeleting-message">
+            <div class = "message">
+                <p>Thank, ${name}! Your order is on its way!</p>
+        </div>
+
+
+    </div>
+
+    <div class="footer">
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
