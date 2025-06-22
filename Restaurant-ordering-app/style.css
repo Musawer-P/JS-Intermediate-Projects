@@ -1,3 +1,150 @@
 body{
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
+
+#search{
+    border: none;
+    border-bottom: 1px solid black;
+    width: 100%;
+    padding: 10px;
+    outline: none;
+}
+.products{
+    display: flex;
+}
+
+#product-name{
+    font-size: 20px;
+    font-weight: 100;
+    text-align: center;
+}
+.image-div{
+    text-align: center;
+}
+img{
+    
+    width: 200px;
+}
+#product-price{
+    text-align: center;
+    font-size: 18px;
+
+}
+#product-desc{
+    text-align: center;
+}
+
+.inc-btn{
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+    
+}
+#order-qty{
+    width: 10%;
+max-width: 10%;
+padding: 5px;
+border: 1px solid rgb(185, 185, 185);
+border-radius: 5px;
+}
+
+#add{
+color: rgb(131, 131, 131); 
+background-color: rgba(240, 248, 255, 0);
+border: 1px solid rgb(131, 131, 131);
+padding: 10px 13px;
+border-radius: 50px;
+}
+#increment{
+color: rgb(131, 131, 131); 
+background-color: rgba(240, 248, 255, 0);
+border: 1px solid rgb(131, 131, 131);
+padding: 10px 15px;
+border-radius: 50px;
+}
+#cart-h2{
+    text-align: center;
+
+}
+#cart-item{
+    font-size: 15px;
+    font-weight: 100;
+}
+
+#item-price{
+    font-weight: bold;
+}
+.cart-items{
+    display: flex;
+    justify-content: space-between;
+}
+.break-line{
+    background-color: black;
+    height: 1px;
+}
+
+.total{
+    display: flex;
+    justify-content: space-between;
+}
+#total{
+    font-weight: bold;
+}
+#total-item{
+    font-weight: bold;
+}
+.cart-btn{
+    display: flex;
+    justify-content: center;
+}
+#cart-btn{
+    text-align: center;
+    width: 100%;
+    padding: 10px;
+    color: white;
+    border: none;
+    background-color: rgb(11, 199, 127);
+}
+
+#checkout-h2{
+    text-align: center;
+}
+
+.input-class{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 5px;
+}
+
+#name, #card-number, #CVV{
+    padding: 10px;
+    outline: none;
+    
+}
+#card-btn{
+    margin-top: 10px;
+ text-align: center;
+    width: 100%;
+    padding: 10px;
+    color: white;
+    border: none;
+    background-color: rgb(11, 199, 127);    
+}
+
+.compeleting-message{
+    margin-top: 10px;
+    background-color: rgba(10, 204, 162, 0.658);
+    padding: 5px;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 5px;
+}
+#compeleting-message{
+    color: white;
+     display: flex;
+    justify-content: center;
+    
+}
+

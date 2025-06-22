@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;600&display=swap" rel="stylesheet">
     <link href="style.css" rel="stylesheet">
     <title>Ordering App</title>
 </head>
@@ -16,63 +17,110 @@
     </div>
     <div class="body">
         <div class="products">
-            <input type="text" id="search-product" placeholder="Search">
-            <div class="product-name">
-                <h2 id="product-name">Chicken Pizza</h2>
-                <img src="images/pizza.jpg">
-                <p id="product-price">10$</p>
-                <p id="product-desc">A delicious fusion of tender, seasoned chicken layered over a bed of rich tomato
-                    sauce and melted mozzarella cheese. Each slice is packed with flavor—featuring juicy grilled or
-                    shredded chicken, hints of garlic, herbs, and spices, all perfectly balanced with a golden, crispy
-                    crust.</p>
-
-                    <div class = "inc-button">
-                       <button type="submit" id="add">
-  <i class="fas fa-add"></i>
-</button>
-<input type = "text" id = "order-qty" value = "1">
-<button type="submit" id="increment">
-  <i class="fas fa-minus"></i>
-</button>
+            <div class="pizza-section-1">
+                <div class="product-name">
+                    <h2 id="product-name">Chicken Pizza</h2>
+                    <div class="image-div">
+                        <img src="images/pizza.jpg">
                     </div>
-            </div>
-        </div>
+                    <p id="product-price">10$</p>
+                    <p id="product-desc">A delicious fusion of tender, seasoned chicken layered over a bed of rich
+                        tomato
+                        sauce and melted mozzarella cheese. Each slice is packed with flavor—featuring juicy grilled or
+                        shredded chicken, hints of garlic, herbs, and spices, all perfectly balanced with a golden,
+                        crispy
+                        crust.</p>
 
-
-        <div class = "cart">
-            <h2 id = "cart-h2">Cart</h2>
-            <div class = "cart-items">
-                <h1 id = "cart-item">Pizza</h1>
-                <p id = "item-price">10$</p>
+                    <div class="inc-btn">
+                        <button type="submit" id="add">+</button>
+                        <input type="text" id="order-qty" value="1">
+                        <button type="submit" id="increment">-</button>
+                    </div>
                 </div>
-                <div class = "total">
-                    <p id = "total">Total</p>
-                    <p id = "discount"> 10%</p>
-                <p id = "total-item">9$</p>
-
             </div>
-            <div class = "cart-btn">
-                <button type = "submit" id = "catr-btn">Check out</button>
+
+            <div class="pizza-section-3">
+
+                <h2 id="product-name">Steak</h2>
+                <div class="image-div">
+                    <img src="images/steak.png" id="image">
+                </div>
+                <p id="product-price">30$</p>
+                <p id="product-desc">Our perfectly grilled steak is a masterpiece of flavor — seared to golden-brown
+                    perfection on the outside, and tender and juicy on the inside. Each bite melts in your mouth,
+                    bursting with rich, smoky notes and savory seasoning.</p>
+
+                <div class="inc-btn">
+                    <button type="submit" id="add">+</button>
+                    <input type="text" id="order-qty" value="1">
+                    <button type="submit" id="increment">-</button>
+                </div>
+            </div>
+
+            <div class="pizza-section-3">
+
+                <h2 id="product-name">fried Chicken</h2>
+                <div class="image-div">
+                    <img src="images/chicken.png">
+                </div>
+                <p id="product-price">40$</p>
+                <p id="product-desc">Our fried chicken is the ultimate comfort food — marinated to the bone in a blend
+                    of bold spices, then hand-breaded and fried to golden perfection. The result? A crispy, crunchy
+                    coating that gives way to tender, juicy meat with every bite. 
+                    
+
+                </p>
+
+                <div class="inc-btn">
+                    <button type="submit" id="add">+</button>
+                    <input type="text" id="order-qty" value="1">
+                    <button type="submit" id="increment">-</button>
+                </div>
             </div>
         </div>
+    </div>
 
 
-         <div class = "card-details">
-            <h2 id = "checkout-h2">Enter Card Details</h2>
-            <input type = "text" id = "name" placeholder="Enter your Name">
-            <input type = "text" id = "card-number" placeholder="Enter Card Number">
-            <input type = "text" id = "CVV" placeholder="Enter CVV">
-
-            <button type = "submit" id = "card-btn">Pay</button>
-
+    <div class="cart">
+        <h2 id="cart-h2">Your Order</h2>
+        <div class="cart-items">
+            <h1 id="cart-item">Pizza</h1>
+            <p id="item-price">10$</p>
+        </div>
+        <div class="cart-items">
+            <h1 id="cart-item">Orange-Juice</h1>
+            <p id="item-price">5$</p>
         </div>
 
-        <div class = "compeleting-message">
-            <div class = "message">
-                <p>Thank, ${name}! Your order is on its way!</p>
+        <div class="break-line">
+
         </div>
+        <div class="total">
+            <p id="total">Total</p>
+            <p id="total-item">13.5$</p>
+
+        </div>
+        <div class="cart-btn">
+            <button type="submit" id="cart-btn">Check out</button>
+        </div>
+    </div>
 
 
+    <div class="card-details">
+        <h2 id="checkout-h2">Enter Card Details</h2>
+        <div class="input-class">
+            <input type="text" id="name" placeholder="Enter your Name">
+            <input type="text" id="card-number" placeholder="Enter Card Number">
+            <input type="text" id="CVV" placeholder="Enter CVV">
+        </div>
+        <button type="submit" id="card-btn">Pay</button>
+
+    </div>
+
+    <div class="compeleting-message">
+        <div class="message">
+            <p id="compeleting-message">Thank, ${name}! Your order is on its way!</p>
+        </div>
     </div>
 
     <div class="footer">
