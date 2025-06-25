@@ -3,6 +3,7 @@ const cartDiv = document.querySelector('.cart');
 const cartItemsContainer = cartDiv.querySelector('.cart-items');
 const totalAmount = document.getElementById('total-item');
 const checkoutBtn = document.getElementById('cart-btn');
+const closeBtn = document.getElementById('close-btn');
 const cardDetailsDiv = document.querySelector('.card-details');
 const payBtn = document.getElementById('card-btn');
 const thankYouDiv = document.querySelector('.compeleting-message');
@@ -43,11 +44,19 @@ function renderCart() {
         itemDiv.className = 'cart-items';
 
         itemDiv.innerHTML = `
-            <div style="display: flex; justify-content: space-between; width: 100%;">
-                <span style="font-size: 1.1em;">${item.name}</span>
-                <span style="font-size: 1.1em;">$${item.price}</span>
-            </div>
-            <span class="remove" data-index="${index}" style="color: #BBBBBB; font-size: 0.9em; cursor: pointer;">remove</span>
+<div style="display: flex; justify-content: space-between; width: 100%; align-items: center;">
+  
+  <!-- Group name + remove -->
+  <div style="display: flex; align-items: center; gap: 10px;">
+    <span style="font-size: 1.5em; color: black;">${item.name}</span>
+    <span class="remove" data-index="${index}" style="color: #BBBBBB; font-size: 1.2em; cursor: pointer;">remove</span>
+  </div>
+
+  <!-- Price stays in place -->
+  <span style="font-size: 1.5em; color: black; font-weight: bold;">$${item.price}</span>
+
+</div>
+
         `;
 
         cartItemsContainer.appendChild(itemDiv);
@@ -68,6 +77,10 @@ function renderCart() {
     });
 }
 
+
+closeBtn.addEventListener('click', () => {
+    cardDetailsDiv.style.display = 'none';
+});
 
 // Show card form on checkout
 checkoutBtn.addEventListener('click', () => {
