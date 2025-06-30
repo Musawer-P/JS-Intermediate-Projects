@@ -1,5 +1,5 @@
 const input = document.querySelector('.chat-input input');
-const button = document.querySelector('.chat-input button');
+const button = document.querySelector('.chat-input #send');
 const messagesContainer = document.querySelector('.chat-messages');
 
 button.addEventListener('click', () => {

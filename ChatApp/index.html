@@ -8,15 +8,25 @@
 </head>
 <body>
    <div class="chat-container">
-    <div class="chat-header">Chat App</div>
+    <div class="chat-header">
+      
+      <h1>Chat App</h1>
+      <img src = "images/user.png" id = "image">
+
+    </div>
     <div class="chat-messages">
       <div class="message sent">Hi! How are you?</div>
       <div class="message received">I'm good, thanks! You?</div>
       <div class="message sent">All good! Working on a project.</div>
     </div>
     <div class="chat-input">
-      <input type="text" placeholder="Type a message..." />
-      <button>Send</button>
+      <div class = "btn">
+      <button type = "button" id = "add-btn">+</button>
+      </div>
+      <div class = "input-btn">
+      <input type="text" id = "input-search" placeholder="Type a message..." />
+      <button id = "send">Send</button>
+      </div>
     </div>
   </div>
 
