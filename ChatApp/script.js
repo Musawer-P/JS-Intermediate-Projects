@@ -25,3 +25,20 @@ button.addEventListener('click', () => {
     }, 1000);
   }
 });
+
+
+ const addBtn = document.getElementById('add-btn');
+    const optionsMenu = document.getElementById('options-menu');
+
+    addBtn.addEventListener('click', () => {
+      optionsMenu.style.display = optionsMenu.style.display === 'flex' ? 'none' : 'flex';
+    });
+
+    // Optional: Click outside to close
+    document.addEventListener('click', (e) => {
+      if (!addBtn.contains(e.target) && !optionsMenu.contains(e.target)) {
+        optionsMenu.style.display = 'none';
+      }
+    });
+
+    feather.replace()
