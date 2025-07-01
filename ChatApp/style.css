@@ -9,6 +9,7 @@
     body {
       background-color: #f1f1f1;
       display: flex;
+      margin: 0 auto;
       justify-content: center;
       align-items: center;
       height: 100vh;
@@ -109,6 +110,7 @@
     }
 
     .btn {
+  
       margin: auto;
       width: 10%;
       padding-right: 0px;
@@ -139,9 +141,11 @@
     }
 
     .options {
-    position: absolute;
+      position: fixed;
   bottom: 90px;
-  left: 150px;
+    left: auto;
+    right: auto;
+    margin-right: 200px;
   background: rgba(255, 255, 255, 0.07); 
   backdrop-filter: blur(12px) saturate(180%);
   -webkit-backdrop-filter: blur(12px) saturate(180%);
@@ -155,6 +159,10 @@
   width: 180px;
   z-index: 999;
     }
+
+
+
+
 .options button {
   background: transparent;
   border: none;
