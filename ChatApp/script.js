@@ -6,7 +6,6 @@ const typingIndicator = document.createElement('div');
 typingIndicator.classList.add('message', 'typing');
 typingIndicator.textContent = 'Bot is typing...';
 
-// Keyword-based replies
 function getBotReply(userMessage) {
   const message = userMessage.toLowerCase();
 
@@ -30,7 +29,6 @@ button.addEventListener('click', () => {
   const text = input.value.trim();
 
   if (text !== '') {
-    // Add user message
     const messageDiv = document.createElement('div');
     messageDiv.classList.add('message', 'sent');
     messageDiv.innerHTML = `<span class="avatar user">🧑</span><span class="text">${text}</span>`;
@@ -39,11 +37,9 @@ button.addEventListener('click', () => {
     input.value = '';
     messagesContainer.scrollTop = messagesContainer.scrollHeight;
 
-    // Add typing indicator
     messagesContainer.appendChild(typingIndicator);
     messagesContainer.scrollTop = messagesContainer.scrollHeight;
 
-    // Simulate bot "thinking"
     setTimeout(() => {
       typingIndicator.remove();
 
