@@ -1,8 +1,10 @@
 const video = document.getElementById('myVideo');
   const playPause = document.getElementById('playPause');
+  const container = document.getElementById('video-container');
   const rewind = document.getElementById('rewind');
   const forward = document.getElementById('forward');
   const seekBar = document.getElementById('seekBar');
+const title = document.getElementById("video-h1");
 
   playPause.addEventListener('click', () => {
     if (video.paused) {
@@ -31,3 +33,16 @@ const video = document.getElementById('myVideo');
   seekBar.addEventListener('input', () => {
     video.currentTime = (seekBar.value / 100) * video.duration;
   });
+
+
+
+video.addEventListener("play", () => {
+  title.style.opacity = "0"; // Hide title when playing
+});
+
+video.addEventListener("pause", () => {
+  title.style.opacity = "1"; // Show title when paused
+});
+
+
+  
