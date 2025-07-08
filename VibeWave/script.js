@@ -45,4 +45,7 @@ video.addEventListener("pause", () => {
 });
 
 
-  
+   function changeVideo(src) {
+      video.src = src;
+      video.play();
+    }

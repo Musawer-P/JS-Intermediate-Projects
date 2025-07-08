@@ -9,15 +9,15 @@
     <link href="style.css" rel="stylesheet">
     <title>Vibe Wave</title>
 </head>
-
 <body>
     <div class="heading" style="display: flex; justify-content: center;">
         <h1 id="main-h1">VibeWave</h1>
         <div class="search-box" style="display: flex;
   align-items: center; 
   justify-content: center;">
-            <input type="text" placeholder="Search..." style = "display: none;">
-<i class="fa-solid fa-search" style = "font-size: 25px; color: rgb(63, 63, 63); margin-left: 10px; cursor: pointer;"></i> 
+            <input type="text" placeholder="Search..." style="display: none;">
+            <i class="fa-solid fa-search"
+                style="font-size: 25px; color: rgb(63, 63, 63); margin-left: 10px; cursor: pointer;"></i>
         </div>
     </div>
     <div class="row">
@@ -47,7 +47,7 @@
             <h1 id="h1-list">Playlists</h1>
 
             <div class="playlist" style="display: flex;">
-                <video id="list" src="videos/maherzain.mp4">
+                <video id="list" src="videos/maherzain.mp4"onclick="changeVideo(this.src)" muted>
                 </video>
                 <div class="video-desc">
                     <p id="video-list-h1">Thank you allah</p>
@@ -58,19 +58,7 @@
             </div>
 
             <div class="playlist" style="display: flex;">
-                <video id="list" src="videos/maherzain.mp4">
-                </video>
-                <div class="video-desc">
-                    <p id="video-list-h1">Thank you allah</p>
-                    <p id="video-list-p">Maher zain
-                    </p>
-
-                </div>
-            </div>
-
-
-            <div class="playlist" style="display: flex;">
-                <video id="list" src="videos/maherzain.mp4">
+                <video id="list" src="videos/maherzain.mp4"onclick="changeVideo(this.src)" muted>
                 </video>
                 <div class="video-desc">
                     <p id="video-list-h1">Thank you allah</p>
@@ -82,7 +70,19 @@
 
 
             <div class="playlist" style="display: flex;">
-                <video id="list" src="videos/maherzain.mp4">
+                <video id="list" src="videos/maherzain.mp4"onclick="changeVideo(this.src)" muted>
+                </video>
+                <div class="video-desc">
+                    <p id="video-list-h1">Thank you allah</p>
+                    <p id="video-list-p">Maher zain
+                    </p>
+
+                </div>
+            </div>
+
+
+            <div class="playlist" style="display: flex;">
+                <video id="list" src="videos/maherzain.mp4"onclick="changeVideo(this.src)" muted>
                 </video>
                 <div class="video-desc">
                     <p id="video-list-h1">Thank you allah</p>
@@ -109,8 +109,9 @@
             it one of Maher Zain’s most beloved tracks. It’s often played during spiritual gatherings, Islamic events,
             and moments of reflection.</p>
     </div>
-
     <script src="script.js"></script>
+
+
 </body>
 
 </html>

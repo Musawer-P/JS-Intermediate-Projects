@@ -106,6 +106,7 @@ padding: 10px;
 
   #list{
     width: clamp(100px, 10vw, 1000px);
+    cursor: pointer;
 
   }
 
