@@ -1,51 +1,16 @@
-const video = document.getElementById('myVideo');
-  const playPause = document.getElementById('playPause');
-  const container = document.getElementById('video-container');
-  const rewind = document.getElementById('rewind');
-  const forward = document.getElementById('forward');
-  const seekBar = document.getElementById('seekBar');
-const title = document.getElementById("video-h1");
+const video = document.getElementById('myVideo'); 
+const title = document.getElementById('video-h1'); 
+const shortDesc = document.getElementById('video-description'); 
+const fullDesc = document.getElementById('full-description'); 
 
-  playPause.addEventListener('click', () => {
-    if (video.paused) {
-      video.play();
-      playPause.textContent = 'Pause';
-    } else {
-      video.pause();
-      playPause.textContent = 'Play';
-    }
-  });
-
-  rewind.addEventListener('click', () => {
-    video.currentTime -= 10; // back 10 seconds
-  });
-
-  forward.addEventListener('click', () => {
-    video.currentTime += 10; // forward 10 seconds
-  });
-
-  // Update seek bar as video plays
-  video.addEventListener('timeupdate', () => {
-    seekBar.value = (video.currentTime / video.duration) * 100;
-  });
-
-  // Seek when bar is changed
-  seekBar.addEventListener('input', () => {
-    video.currentTime = (seekBar.value / 100) * video.duration;
-  });
-
-
-
-video.addEventListener("play", () => {
-  title.style.opacity = "0"; // Hide title when playing
-});
-
-video.addEventListener("pause", () => {
-  title.style.opacity = "1"; // Show title when paused
-});
-
-
-   function changeVideo(src) {
-      video.src = src;
-      video.play();
-    }
+function changeVideo(src, videoTitle, descriptionText, fullDescription = '') {
+  video.src = src;
+  title.textContent = videoTitle;
+  shortDesc.textContent = descriptionText;
+  if (fullDescription) {
+    fullDesc.innerHTML = fullDescription; 
+  } else {
+    fullDesc.textContent = ''; 
+  }
+  video.play();
+}

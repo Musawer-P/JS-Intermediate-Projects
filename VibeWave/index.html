@@ -32,72 +32,108 @@
                 </div>
 
 
-                <!--
-<div class="controls">
-  <button id="playPause">Play</button>
-  <button id="rewind">⏪</button>
-  <button id="forward">⏩</button>
-  <input type="range" id="seekBar" value="0">
-</div>
--->
-
             </div>
         </div>
         <div class="sidebar">
             <h1 id="h1-list">Playlists</h1>
 
-            <div class="playlist" style="display: flex;">
-                <video id="list" src="videos/maherzain.mp4"onclick="changeVideo(this.src)" muted>
-                </video>
-                <div class="video-desc">
-                    <p id="video-list-h1">Thank you allah</p>
-                    <p id="video-list-p">Maher zain
-                    </p>
-
-                </div>
-            </div>
-
-            <div class="playlist" style="display: flex;">
-                <video id="list" src="videos/maherzain.mp4"onclick="changeVideo(this.src)" muted>
-                </video>
-                <div class="video-desc">
-                    <p id="video-list-h1">Thank you allah</p>
-                    <p id="video-list-p">Maher zain
-                    </p>
-
-                </div>
-            </div>
 
 
-            <div class="playlist" style="display: flex;">
-                <video id="list" src="videos/maherzain.mp4"onclick="changeVideo(this.src)" muted>
-                </video>
-                <div class="video-desc">
-                    <p id="video-list-h1">Thank you allah</p>
-                    <p id="video-list-p">Maher zain
-                    </p>
+            
+                  
+<div class="playlist" style="display: flex; width: auto;">
+  <video 
+    id="list" 
+    src="videos/maherzain.mp4" 
+    muted 
+ onclick="changeVideo(
+    'videos/maherzain.mp4',
+    'Thank you allah',
+    'Maher zain',
+    `Thank You Allah is the title track from Maher Zain’s debut album, released in 2009. The song is a heartfelt expression of gratitude to God (Allah) for His mercy, guidance, and countless blessings in life. Sung in English with spiritual themes rooted in Islam, it blends soulful vocals with soft, uplifting melodies. Maher Zain uses this song to reflect on his personal journey, acknowledging his past mistakes and how turning to faith transformed his life. The lyrics emphasize humility, forgiveness, and appreciation for divine love. The song’s peaceful rhythm and emotional lyrics have touched millions of listeners around the world, making it one of Maher Zain’s most beloved tracks. It’s often played during spiritual gatherings, Islamic events, and moments of reflection.`)">
+  </video>
 
-                </div>
-            </div>
+  <div class="video-desc">
+    <p id="video-list-h1">Thank you Allah</p>
+    <p id="video-list-p">Maher zain</p>
+    <p id="video-description"></p>
 
 
-            <div class="playlist" style="display: flex;">
-                <video id="list" src="videos/maherzain.mp4"onclick="changeVideo(this.src)" muted>
-                </video>
-                <div class="video-desc">
-                    <p id="video-list-h1">Thank you allah</p>
-                    <p id="video-list-p">Maher zain
-                    </p>
+  </div>
+</div>
+            
+<div class="playlist" style="display: flex; width: auto;">
+  <video 
+    id="list" 
+    src="videos/quran.mp4" 
+    muted 
+ onclick="changeVideo(
+    'videos/quran.mp4',
+    'Surah Ahzab',
+    'Sheikh Badr Al Turki',
+    `<p>This is a beautiful recitation of Surah Ahzab by Sheikh Badr Al Turki. The recitation emphasizes the depth of faith and spiritual reflection during times of difficulty. It is well-known for its emotional delivery and calming pace, often used for reflection and memorization.</p>`
+  )">
+    </video>
 
-                </div>
-            </div>
+  <div class="video-desc">
+    <p id="video-list-h1">Surah Ahzab</p>
+    <p id="video-list-p">Sheikh Badr Al Turki</p>
+    <p id="video-description"></p>
+
+  </div>
+</div>
+
+
+                  
+<div class="playlist" style="display: flex; width: auto;">
+  <video 
+    id="list" 
+    src="videos/sami-yusuf.mp4" 
+    muted 
+onclick="changeVideo(
+    'videos/sami-yusuf.mp4',
+    'Sami Yusuf',
+    'Janneh jannah',
+    `<p>Janneh Jannah is a heartfelt spiritual song by Sami Yusuf that beautifully expresses the longing and hope for Paradise (Jannah) in Islamic belief. The song combines soulful melodies with meaningful lyrics, inviting listeners to reflect on faith, patience, and the eternal reward awaiting the righteous. Sami Yusuf’s soothing voice and thoughtful composition create an atmosphere of peace and devotion, making “Janneh Jannah” a beloved track for moments of spiritual reflection and inspiration.</p>`
+  )">  </video>
+
+  <div class="video-desc">
+    <p id="video-list-h1">Janneh jannah</p>
+    <p id="video-list-p">Sami yusuf</p>
+    <p id="video-description"></p>
+  </div>
+</div>
+
+
+                   
+<div class="playlist" style="display: flex; width: auto;">
+  <video 
+    id="list" 
+    src="videos/lamp.mp4" 
+    muted 
+onclick="changeVideo(
+    'videos/lamp.mp4',
+    'Cool lamp for your Desk',
+    'Vemmos',
+    `<p>The Cool Vemmos Lamp for Your Desk is a stylish and modern lighting solution designed to brighten your workspace with elegance and functionality. Featuring adjustable brightness and sleek design, this lamp not only enhances your desk aesthetics but also provides comfortable illumination for reading, working, or relaxing. Perfect for home offices, study areas, or creative studios, it combines practicality with contemporary flair to keep you inspired and productive throughout the day.</p>`
+  )">  </video>
+
+  <div class="video-desc">
+    <p id="video-list-h1">Cool lamp for your desk</p>
+    <p id="video-list-p">Vemmos</p>
+    <p id="video-description"></p>
+  </div>
+</div>
+
+
 
 
         </div>
     </div>
-    <div class="footer">
-        <h2>Description</h2>
-        <p>"Thank You Allah" is the title track from Maher Zain’s debut album, released in 2009. The song is a heartfelt
+   <div class="footer">
+  <h2>Description</h2>
+  <p id="full-description">
+Thank You Allah" is the title track from Maher Zain’s debut album, released in 2009. The song is a heartfelt
             expression of gratitude to God (Allah) for His mercy, guidance, and countless blessings in life. Sung in
             English with spiritual themes rooted in Islam, it blends soulful vocals with soft, uplifting melodies.
 
@@ -108,10 +144,12 @@
             The song’s peaceful rhythm and emotional lyrics have touched millions of listeners around the world, making
             it one of Maher Zain’s most beloved tracks. It’s often played during spiritual gatherings, Islamic events,
             and moments of reflection.</p>
-    </div>
+</div>
     <script src="script.js"></script>
 
 
 </body>
 
 </html>
+
+
