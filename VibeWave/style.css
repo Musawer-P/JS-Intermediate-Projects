@@ -1,41 +1,55 @@
 body {
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    background-color: rgb(255, 255, 255);
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  background-color: rgb(255, 255, 255);
 }
 
-.main {
-    background-color: #f7f7f7;
-    height: auto;
-    padding: 0px;
-    border-radius: 10px;
-    width: 70%;
-    margin: 0px;
+.heading {
+  display: flex;
+  justify-content: center;
+  border-bottom: 1px solid #f1f1f1;
+ 
 }
-#main-h1{
-    font-family: 'Raleway', sans-serif;
+
+#main-h1 {
+  font-family: 'Raleway', sans-serif;
   font-weight: 600;
   font-size: 35px;
   text-align: center;
   color: #3754d3;
   text-transform: uppercase;
+   padding: 7px;
+      padding-bottom: 15px;
+
+  margin: 0px;
 }
 
-.video{
-    position: relative;
-
-}
-#myVideo{
-    width: 100%;
-    height: 80vh; 
-  object-fit: contain; 
-    background-color: black; 
-    border-radius: 10px;
-      display: block;
-
+.main {
+  background-color: #f7f7f7;
+  height: auto;
+  padding: 0px;
+  border-radius: 10px;
+  width: 70%;
+  margin-top: 0px;
 }
 
-#video-h1{
- position: absolute;
+
+.video {
+  position: relative;
+
+}
+
+#myVideo {
+  width: 100%;
+  height: 80vh;
+  object-fit: contain;
+  background-color: black;
+  border-radius: 10px;
+  display: block;
+
+}
+
+#video-h1 {
+  position: absolute;
   top: 0px;
   margin-left: 15px;
   left: 0;
@@ -45,7 +59,8 @@ body {
   font-size: 24px;
   font-weight: bold;
   text-shadow: 0 0 10px black;
-  pointer-events: none; /* Prevent click blocking controls */
+  pointer-events: none;
+  /* Prevent click blocking controls */
   transition: opacity 0.5s ease;
   z-index: 2;
 }
@@ -54,104 +69,115 @@ body {
 
 
 
-  
+
 .row {
-    display: flex;
-    justify-content: space-between;
-    gap: 10px;
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+    margin-top: 15px;
+
 }
 
 
- .controls {
-    width: 100%;
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    margin-top: 10px;
-  }
-
-  
-  button {
-    padding: 8px 12px;
-    font-size: 16px;
-    cursor: pointer;
-  }
+.controls {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 10px;
+}
 
 
-  .footer{
-box-sizing: border-box;
-    margin-top: 10px;
-    background-color: #f7f7f7;
-    width: 69%;
-    padding: 10px;
-    border-radius: 10px;
-  }
+button {
+  padding: 8px 12px;
+  font-size: 16px;
+  cursor: pointer;
+}
 
-  .sidebar{
-background-color: #f7f7f7;
-width: 30%;
-border-radius: 10px;
-padding: 10px;
 
-  }
+.footer {
+  box-sizing: border-box;
+  margin-top: 10px;
+  background-color: #f7f7f7;
+  width: 69%;
+  padding: 10px;
+  border-radius: 10px;
+}
 
-  .playlist{
-    border-bottom: 1px solid #dbdbdb;
-    padding-bottom: 10px;
-    padding-top: 10px;
-  }
+.sidebar {
+  background-color: #f7f7f7;
+  width: 30%;
+  border-radius: 10px;
+  padding: 10px;
 
-  #list{
-    height: 80px;
-    width: clamp(100px, 10vw, 1000px);
-    cursor: pointer;
-    background-color: black;
+}
 
-  }
+.playlist {
+  display: flex;
+  width: auto;
+  border-bottom: 1px solid #dbdbdb;
+  padding-bottom: 10px;
+  padding-top: 10px;
+}
 
-  .video-desc{
-    margin-left: 10px;
-  }
-  #video-list-h1{
-padding: 0px;
-margin: 0px;
-font-size: 2vw;
+#list {
+  height: 80px;
+  width: clamp(100px, 10vw, 1000px);
+  border-radius: 4px;
+  cursor: pointer;
+  background-color: black;
+
+}
+
+.video-desc {
+  margin-left: 10px;
+}
+
+#video-list-h1 {
+  padding: 0px;
+  margin: 0px;
+  font-size: 2vw;
   font-size: clamp(0.9rem, 1vw, 0.1rem);
   font-weight: bold;
 
-  }
+}
 
-  #video-list-p{
-padding: 0px;
-margin: 0px;
-margin-top: 5px;
+#video-list-p {
+  padding: 0px;
+  margin: 0px;
+  margin-top: 5px;
   font-size: clamp(0.9rem, 1vw, 1rem);
 
-  }
-  #h1-list{
-    color: #3754d3;
-    font-weight: 300;
-    margin: 0px;
-    margin-bottom: 20px;
-    margin-top: 10px;
-  }
+}
+
+#h1-list {
+  color: #3754d3;
+  font-weight: 300;
+  margin: 0px;
+  margin-bottom: 20px;
+  margin-top: 10px;
+}
 
 
-  @media (max-width: 768px){
-    body{
-      padding-right: 15px;
-    }
-    .row{
-      flex-direction: column;
-    }
-    .main{
-      width: 100%;
-      padding: 0px;
-    }
-    .sidebar{
-      width: 97%;
-    }
-    .footer{
-      width: 100%;
-    }
+@media (max-width: 768px) {
+  body {
+    padding-right: 15px;
   }
+
+  .row {
+    flex-direction: column;
+  }
+
+  .main {
+    width: 100%;
+    padding: 0px;
+  }
+
+  .sidebar {
+    width: 97%;
+  }
+
+  .footer {
+    width: 100%;
+  }
+}
