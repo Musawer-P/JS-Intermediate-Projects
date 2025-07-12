@@ -1,2 +1,2 @@
 Link of the project - 
-cute-fairy-02a186.netlify.app
+https://magenta-halva-cc23bc.netlify.app/
