@@ -1,0 +1,90 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 0px;
+    margin: 0px;
+}
+.main{
+
+ background: linear-gradient(rgba(0, 0, 0, 0.664), rgba(0, 0, 0, 0.664)), 
+              url('images/background-main.jpg');  background-size: cover; 
+  background-position: center; 
+  background-repeat: no-repeat; 
+  height: 100vh; 
+  width: 100%; 
+  color: white;
+
+}
+
+
+.head{
+    padding: 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+
+
+}
+
+#sign-in{
+    background-color: #e50914;
+    padding: 10px 15px;
+    border-radius: 5px;
+    color: white;
+    border: none;
+    font-weight: bold;
+}
+
+#main-logo{
+    width: 100px;
+}
+
+.text{
+    text-align: center;
+        font-weight: bold;
+        margin-top: 150px;
+
+}
+#p-1{
+    font-size: 55px;
+    font-weight: bold;
+   margin: 0px;
+    padding: 0px;
+}
+#p-2{
+    font-size: 18px;
+    font-weight: bold;
+    margin: 0px;
+    margin-top: 20px;
+    padding: 0px;
+
+}
+#p-3{
+    font-size: 18px;
+    font-weight: 100;
+    margin-top: 30px;
+
+}
+
+.email{
+    text-align: center;
+}
+
+#email{
+padding: 15px 10px;
+width: 30%;
+max-width: 300px;
+outline: none;
+background-color: #00000042;
+border: 1px solid #ffffff98;
+
+}
+#get-started{
+padding: 15px 10px;
+background-color: #e50914;
+color: white;
+border: 0px solid #e50914;
+border-radius: 3px;
+font-size: 16px;
+font-weight: bold;
+
+}
