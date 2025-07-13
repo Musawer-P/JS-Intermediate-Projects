@@ -88,3 +88,52 @@ font-size: 16px;
 font-weight: bold;
 
 }
+
+
+.banner {
+  position: relative;
+  color: white;
+  height: 60vh;
+  background-image: url('https://image.tmdb.org/t/p/original//x2LSRK2Cm7MZhjluni1msVJ3wDF.jpg');
+  background-size: cover;
+  background-position: center center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 2rem;
+}
+
+.banner__title {
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+.banner__description {
+  margin-top: 1rem;
+  max-width: 450px;
+  font-size: 1rem;
+  line-height: 1.3;
+}
+
+.banner__buttons {
+  margin-top: 1rem;
+}
+
+.banner__button {
+  cursor: pointer;
+  color: #fff;
+  background-color: rgba(51, 51, 51, 0.5);
+  border: none;
+  padding: 0.5rem 1.5rem;
+  margin-right: 1rem;
+  border-radius: 0.2vw;
+  font-weight: 600;
+}
+
+.banner--fadeBottom {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 7rem;
+  background-image: linear-gradient(to bottom, transparent, rgba(0,0,0,0.6), black);
+}
