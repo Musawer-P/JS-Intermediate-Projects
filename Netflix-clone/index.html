@@ -1,14 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href  = "style.css" rel = "stylesheet">
+    <link href="style.css" rel="stylesheet">
     <title>Netflix clone</title>
 </head>
 
 <body>
-
+    <!--
 
     <div class="banner">
   <div class="banner__contents">
@@ -24,93 +25,143 @@
   <div class="banner--fadeBottom"></div>
 </div>
 
+-->
+
+    <div class="main">
+        <div class="head">
+            <img src="images/netflix.png" id="main-logo">
+            <button type="submit" id="sign-in">Sign in</button>
+        </div>
+
+        <div class="text">
+            <p id="p-1">Unlimited movies, TV<br> shows, and more</p>
+            <p id="p-2">Starts at USD 3.99. Cancel anytime.</p>
+            <p id="p-3">Ready to watch? Enter your email to create or restart your membership.</p>
+        </div>
+
+        <div class="email">
+            <input type="text" id="email" placeholder="Email Address">
+            <button type="submit" id="get-started">Get Started</button>
+        </div>
+    </div>
+    <div class = "main-layout">
+    <div class="poster">
+        <p id="trending-post">Trending Now</p>
+        <div class="list">
+            <div class="poster-p">
+                <img src="images/squid-game-poster.jpg" id="poster">
+                <p id="poster-p1">1</p>
+            </div>
+            <div class="poster-p">
+                <img src="images/the-sand-man.jpg" id="poster">
+                <p id="poster-p1">2</p>
+
+            </div>
+            <div class="poster-p">
+
+                <img src="images/sinper-last-stand.jpg" id="poster">
+                <p id="poster-p1">3</p>
+
+            </div>
+            <div class="poster-p">
+
+                <img src="images/havoc.jpg" id="poster">
+                <p id="poster-p1">4</p>
+
+            </div>
 
 
-    <div class = "main">
-    <div class="head">
-        <img src = "images/netflix.png" id = "main-logo">
-        <button type="submit" id = "sign-in">Sign in</button>
+
+        </div>
     </div>
 
-    <div class="text">
-        <p id = "p-1">Unlimited movies, TV<br> shows, and more</p>
-        <p id = "p-2">Starts at USD 3.99. Cancel anytime.</p>
-        <p id = "p-3">Ready to watch? Enter your email to create or restart your membership.</p>
-    </div>
 
-    <div class="email">
-        <input type="text" id="email" placeholder="Email Address">
-        <button type="submit" id = "get-started">Get Started</button>
-    </div>
-</div>
-    <p>Trending Now</p>
-    <div class="list">
-        <img src="images/squidgame.png">
-        <img src="images/squidgame.png">
-        <img src="images/squidgame.png">
-        <img src="images/squidgame.png">
-    </div>
+
 
     <div class="grid">
-        <p>More Reasons to Join</p>
+        <p id="grid-h">More Reasons to Join</p>
         <div class="cart">
             <div class="first">
                 <h3>Enjoy on your TV</h3>
-                <p>Watch on Smart TVs, Playstation, Xbox, Chromecast, Apple TV, Blu-ray players, and more.</p>
+                <p id="grid-p1">Watch on Smart TVs, Playstation, Xbox, Chromecast, Apple TV, Blu-ray players, and more.
+                </p>
+                <div class="tv">
+                    <img src="images/tv.png" id="tv-img">
+                </div>
             </div>
             <div class="second">
                 <h3>Download your shows to watch offline
                 </h3>
-                <p>Save your favorites easily and always have something to watch.
-
+                <p id="grid-p1">Save your favorites easily and always have something to watch.
                 </p>
+                <div class="download">
+                    <img src="images/download.png" id="download-img">
+                </div>
             </div>
             <div class="third">
                 <h3>Watch everywhere</h3>
-                <p>Stream unlimited movies and TV shows on your phone, tablet, laptop, and TV.
-
+                <p id="grid-p1">Stream unlimited movies and TV shows on your phone, tablet, laptop, and TV.
                 </p>
+                <div class="watch">
+                    <img src="images/telescope.png" id="watch-img">
+                </div>
             </div>
             <div class="fourth">
                 <h3>Create profiles for kids
                 </h3>
-                <p>Send kids on adventures with their favorite characters in a space made just for them — free with your
+                <p id = "grid-p1">Send kids on adventures with their favorite characters in a space made just for them — free with your
                     membership.
 
                 </p>
+                <div class="kid">
+                    <img src="images/kid.png" id="kid-img">
+                </div>
             </div>
         </div>
     </div>
 
-    <div class = "faq">
-        <p>Frequently Asked Questions
-</p>
-<div class = "faq-f">
-<p>What is Netflix</p>
-</div>
+    <div class="faq">
+        <p id = "faq-h">Frequently Asked Questions
+        </p>
+        <div class = "faq-div">
+        <div class="faq-f">
+            <p>What is Netflix</p>
+            <img src = "images/plus.png" id = "plus-img">
+            </div>
+        <div class="faq-f">
+            <p>What is Netflix</p>
+                        <img src = "images/plus.png" id = "plus-img">
 
-<div class = "faq-s">
-<p>What is Netflix</p>
-</div>
+        </div>
 
-<div class = "faq-t">
-<p>What is Netflix</p>
-</div>
+        <div class="faq-f">
+            <p>What is Netflix</p>
+                        <img src = "images/plus.png" id = "plus-img">
 
-<div class = "faq-fourth">
-<p>What is Netflix</p>
-</div>
+        </div>
 
-<div class = "faq-five">
-<p>What is Netflix</p>
-</div>
+        <div class="faq-f">
+            <p>What is Netflix</p>
+                        <img src = "images/plus.png" id = "plus-img">
 
-<div class = "faq-s">
-<p>What is Netflix</p>
-</div>
+        </div>
+
+        <div class="faq-f">
+            <p>What is Netflix</p>
+                        <img src = "images/plus.png" id = "plus-img">
+
+        </div>
+
+        <div class="faq-f">
+            <p>What is Netflix</p>
+                        <img src = "images/plus.png" id = "plus-img">
+
+        </div>
     </div>
+    </div>
+</div>
 
-    <script src = "script.js"></script>
+    <script src="script.js"></script>
 </body>
 
 </html>
