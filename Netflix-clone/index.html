@@ -45,36 +45,61 @@
         </div>
     </div>
     <div class="main-layout">
-        <div class="poster">
-            <p id="trending-post">Trending Now</p>
-            <div class="list">
-                <div class="poster-p">
-                    <img src="images/squid-game-poster.jpg" id="poster">
-                    <p id="poster-p1">1</p>
-                </div>
-                <div class="poster-p">
-                    <img src="images/the-sand-man.jpg" id="poster">
-                    <p id="poster-p1">2</p>
+     <div class="poster">
+  <p id="trending-post">Trending Now</p>
 
-                </div>
-                <div class="poster-p">
+  <div class="slider-wrapper">
+    <button class="slider-btn left" id = "leftBtn"><</button>
 
-                    <img src="images/sinper-last-stand.jpg" id="poster">
-                    <p id="poster-p1">3</p>
-
-                </div>
-                <div class="poster-p">
-
-                    <img src="images/havoc.jpg" id="poster">
-                    <p id="poster-p1">4</p>
-
-                </div>
-
-
-
-            </div>
+    <div class="poster-slider-container" id="slider">
+      <div class="list" id="poster-list">
+        <!-- Posters -->
+        <div class="poster-p">
+          <img src="images/squid-game-poster.jpg" id="poster">
+          <p id="poster-p1">1</p>
         </div>
+        <div class="poster-p">
+          <img src="images/the-sand-man.jpg" id="poster">
+          <p id="poster-p1">2</p>
+        </div>
+        <div class="poster-p">
+          <img src="images/sinper-last-stand.jpg" id="poster">
+          <p id="poster-p1">3</p>
+        </div>
+        <div class="poster-p">
+          <img src="images/havoc.jpg" id="poster">
+          <p id="poster-p1">4</p>
+        </div>
+        <div class="poster-p">
+          <img src="images/the-union.jpg" id="poster">
+          <p id="poster-p1">5</p>
+        </div>
+        <div class="poster-p">
+          <img src="images/rebel-ridge.jpg" id="poster">
+          <p id="poster-p1">6</p>
+        </div>
+        <div class="poster-p">
+          <img src="images/extraction-2.jpeg" id="poster">
+          <p id="poster-p1">7</p>
+        </div>
+        <div class="poster-p">
+          <img src="images/carry-on.jpg" id="poster">
+          <p id="poster-p1">8</p>
+        </div>
+        <div class="poster-p">
+          <img src="images/gray-man.jpeg" id="poster">
+          <p id="poster-p1">9</p>
+        </div>
+        <div class="poster-p">
+          <img src="images/my-spy.jpeg" id="poster">
+          <p id="poster-p1">10</p>
+        </div>
+      </div>
+    </div>
 
+    <button class="slider-btn right" id = "rightBtn">></button>
+  </div>
+</div>
 
 
 
@@ -124,34 +149,74 @@
 
 
 
-   <div class="faq">
-  <p id="faq-h">Frequently Asked Questions</p>
-  <div class="faq-div">
+        <div class="faq">
+            <p id="faq-h">Frequently Asked Questions</p>
             <div class="faq-f">
-        <p>What is Netflix?</p>
-        <img src="images/plus.png" class="toggle-icon">
-        </div>
-      <div class="faq-answer" style="display:none;">
-        <p>Netflix is a streaming service that offers a wide variety of award-winning TV shows, movies, anime, documentaries, and more on thousands of internet-connected devices.<br><br>
+                <p>What is Netflix?</p>
+                <img src="images/plus.png" class="plus-icon" id="img-plus" />
+                <img src="images/close.png" class="close-icon" id="close-img" style="display: none;" />
+            </div>
+            <div class="faq-answer" style="display:none;">
+                <p>Netflix is a streaming service that offers a wide variety of award-winning TV shows, movies, anime,
+                    documentaries, and more on thousands of internet-connected devices.<br><br>
 
-You can watch as much as you want, whenever you want without a single commercial – all for one low monthly price. There's always something new to discover and new TV shows and movies are added every week!</p>
-      </div>
-    </div>
+                    You can watch as much as you want, whenever you want without a single commercial – all for one low
+                    monthly price. There's always something new to discover and new TV shows and movies are added every
+                    week!</p>
+            </div>
 
 
 
-    <div class="faq-div">
             <div class="faq-f">
-        <p>How much does Netflixxost?</p>
-        <img src="images/plus.png" class="toggle-icon">
+                <p>How much does Netflix cost?</p>
+                <img src="images/plus.png" class="plus-icon" id="img-plus" />
+                <img src="images/close.png" class="close-icon" id="close-img" style="display: none;" />
+            </div>
+            <div class="faq-answer" style="display:none;">
+                <p>Watch Netflix on your smartphone, tablet, Smart TV, laptop, or streaming device, all for one fixed
+                    monthly fee. Plans range from USD 3.99 to USD 9.99 a month. No extra costs, no contracts.</p>
+            </div>
+
+
+            <div class="faq-f">
+                <p>How do i cancel?</p>
+                <img src="images/plus.png" class="plus-icon" id="img-plus" />
+                <img src="images/close.png" class="close-icon" id="close-img" style="display: none;" />
+            </div>
+            <div class="faq-answer" style="display:none;">
+                <p>Netflix is flexible. There are no pesky contracts and no commitments. You can easily cancel your
+                    account online in two clicks. There are no cancellation fees – start or stop your account anytime.
+                </p>
+            </div>
+
+
+            <div class="faq-f">
+                <p>Where can i watch on Netflix?</p>
+                <img src="images/plus.png" class="plus-icon" id="img-plus" />
+                <img src="images/close.png" class="close-icon" id="close-img" style="display: none;" />
+            </div>
+            <div class="faq-answer" style="display:none;">
+                <p>Netflix has an extensive library of feature films, documentaries, TV shows, anime, award-winning
+                    Netflix originals, and more. Watch as much as you want, anytime you want.</p>
+            </div>
+
+
+            <div class="faq-f">
+                <p>is Netflix good for kids?</p>
+                <img src="images/plus.png" class="plus-icon" id="img-plus" />
+                <img src="images/close.png" class="close-icon" id="close-img" style="display: none;" />
+            </div>
+            <div class="faq-answer" style="display:none;">
+                <p>The Netflix Kids experience is included in your membership to give parents control while kids enjoy
+                    family-friendly TV shows and movies in their own space.<br><br>
+
+                    Kids profiles come with PIN-protected parental controls that let you restrict the maturity rating of
+                    content kids can watch and block specific titles you don’t want kids to see.</p>
+            </div>
+
+
+
         </div>
-      <div class="faq-answer" style="display:none;">
-        <p>Watch Netflix on your smartphone, tablet, Smart TV, laptop, or streaming device, all for one fixed monthly fee. Plans range from USD 3.99 to USD 9.99 a month. No extra costs, no contracts.</p>
-      </div>
-    </div>
-
-
-</div>
 
 
 
@@ -210,7 +275,7 @@ You can watch as much as you want, whenever you want without a single commercial
                     more.</span></p>
         </div>
 
-
+</div>
 
         <script src="script.js"></script>
 </body>
