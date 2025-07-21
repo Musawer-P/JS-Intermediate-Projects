@@ -1,0 +1,98 @@
+body{
+    background-color: rgba(238, 238, 238, 0.712);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.row{
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+.main{
+    margin: 0 auto;
+    background-color: white;
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2);
+  height: 90vh;
+  width: 70%;
+  padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 5px;
+
+}
+.add{
+     margin: 0 auto;
+    background-color: white;
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2);
+  height: 90vh;
+  width: 30%;
+  padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 5px;
+}
+input{
+    width: 50%;
+    border: none;
+    outline: none;
+    border: 1px solid rgb(238, 238, 238);
+    padding: 10px;
+    border-radius: 3px;
+margin-top: 10px;
+}
+
+.inputs{
+    display: flex;
+    justify-content: space-between;
+    gap: 5px;
+}
+
+#btn{
+    padding: 10px;
+    width: 100%;
+    border: 1px solid black;
+    color: white;
+    background-color: rgb(29, 29, 29);
+    margin-top: 10px;
+    border-radius: 3px;
+    cursor: pointer;
+}
+#btn:hover{
+    background-color: rgb(7, 7, 7);
+}
+h1{
+    padding-top: 20px;
+    padding-bottom: 10px;
+    font-size: 2em;
+    color: rgb(29, 29, 29);
+border-bottom: 1px solid rgba(199, 199, 199, 0.712);
+
+
+}
+.card{
+    border: 1px solid rgba(199, 199, 199, 0.712);
+    height: 30vh;
+    width: 50%;
+    max-width: 200px;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+@media (max-width: 600px){
+.main{
+    width: 90%;
+}
+.add{
+    width: 90%;
+    height: 55vh;
+}
+.row{
+    display: flex;
+    flex-direction: column;
+}
+}
+
+@media (min-width: 601px) and (max-width: 900px){
+.main{
+    width: 50%;
+}
+.add{
+    width: 50%
+}
+}
