@@ -1,46 +1,65 @@
-document.addEventListener("DOMContentLoaded", () => {
-  const form = document.getElementById("task-form");
-  const taskList = document.getElementById("card");
+window.addEventListener("DOMContentLoaded", loadTasks);
 
-  // Load tasks from localStorage
-  const tasks = JSON.parse(localStorage.getItem("tasks")) || [];
-  tasks.forEach(displayTask);
+document.getElementById("task-form").addEventListener("submit", function (e) {
+  e.preventDefault();
 
-  form.addEventListener("submit", (e) => {
-    e.preventDefault();
+  const task = document.getElementById("task").value;
+  const desc = document.getElementById("desc").value;
+  const start = document.getElementById("start").value;
+  const deadline = document.getElementById("deadline").value;
 
-    const name = document.getElementById("task").value.trim();
-    const desc = document.getElementById("desc").value.trim();
-    const start = document.getElementById("start").value;
-    const deadline = document.getElementById("deadline").value;
+  const newTask = {
+    id: Date.now(), // unique id for each task
+    task,
+    desc,
+    start,
+    deadline
+  };
 
-    if (!name || !desc || !start || !deadline) {
-      alert("Please fill in all fields.");
-      return;
-    }
+  addTaskToDOM(newTask);
+  saveTaskToStorage(newTask);
 
-    const newTask = { name, desc, start, deadline };
-    tasks.push(newTask);
-    localStorage.setItem("tasks", JSON.stringify(tasks));
-    displayTask(newTask);
+  document.getElementById("task-form").reset();
+});
 
-    form.reset();
+function addTaskToDOM(taskObj) {
+  const cardContainer = document.getElementById("card");
+
+  const taskDiv = document.createElement("div");
+  taskDiv.className = "task";
+  taskDiv.setAttribute("data-id", taskObj.id);
+
+  taskDiv.innerHTML = `
+    <h3>${taskObj.task}</h3>
+    <p>${taskObj.desc}</p>
+    <p><strong>Start:</strong> ${taskObj.start}</p>
+    <p><strong>Deadline:</strong> ${taskObj.deadline}</p>
+    <button class="delete-btn">Delete</button>
+  `;
+
+  taskDiv.querySelector(".delete-btn").addEventListener("click", function () {
+    deleteTask(taskObj.id);
   });
 
-  function displayTask(task) {
-    const taskCard = document.createElement("div");
-    taskCard.classList.add("task-card");
+  cardContainer.appendChild(taskDiv);
+}
 
-    taskCard.innerHTML = `
-      <h3 class="task-title">${task.name}</h3>
-      <p class="task-desc">${task.desc}</p>
-      <div class="task-dates">
-        <small><strong>Start:</strong> ${task.start}</small><br>
-        <small><strong>Deadline:</strong> ${task.deadline}</small>
-      </div>
-      <hr>
-    `;
+function saveTaskToStorage(taskObj) {
+  const tasks = JSON.parse(localStorage.getItem("tasks")) || [];
+  tasks.push(taskObj);
+  localStorage.setItem("tasks", JSON.stringify(tasks));
+}
 
-    taskList.appendChild(taskCard);
-  }
-});
+function loadTasks() {
+  const tasks = JSON.parse(localStorage.getItem("tasks")) || [];
+  tasks.forEach(task => addTaskToDOM(task));
+}
+
+function deleteTask(id) {
+  const taskDiv = document.querySelector(`.task[data-id='${id}']`);
+  if (taskDiv) taskDiv.remove();
+
+  let tasks = JSON.parse(localStorage.getItem("tasks")) || [];
+  tasks = tasks.filter(task => task.id !== id);
+  localStorage.setItem("tasks", JSON.stringify(tasks));
+}

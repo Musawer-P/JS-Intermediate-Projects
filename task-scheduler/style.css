@@ -16,8 +16,12 @@ body{
   padding-left: 10px;
     padding-right: 10px;
     border-radius: 5px;
+      overflow-y: auto;
+
 
 }
+
+
 .add{
      margin: 0 auto;
     background-color: white;
@@ -63,17 +67,41 @@ h1{
     font-size: 2em;
     color: rgb(29, 29, 29);
 border-bottom: 1px solid rgba(199, 199, 199, 0.712);
-
-
 }
-.card{
-    border: 1px solid rgba(199, 199, 199, 0.712);
-    height: 30vh;
+
+
+
+#card {
+  display: flex;
+  flex-wrap: wrap; 
+  gap: 10px; 
+  padding: 10px;
+}
+.task {
+  width: 200px; 
+  border: 1px solid #ccc;
+  padding: 10px;
+  box-sizing: border-box;
+  border-radius: 6px;
+   border: 1px solid rgba(223, 223, 223, 0.712);
+    height: fit-content;
     width: 50%;
     max-width: 200px;
     border-radius: 5px;
     margin-top: 20px;
 }
+
+.delete-btn{
+     background-color: rgb(248, 21, 21);
+  color: white;
+  padding: 4px 8px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+
+
 @media (max-width: 600px){
 .main{
     width: 90%;
